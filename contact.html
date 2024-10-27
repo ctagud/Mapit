@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Home</title>
+</head>
+
+<body>
+
+  <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: #FAF7F5;">
+    <div class="container">
+      <!-- Logo on the Left -->
+      <a class="navbar-brand" href="index.html">
+<p>Mapit</p>      </a>
+  
+      <!-- Navbar Toggle for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Links in the Middle -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="values.html">Values</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Leadership.html">Leadership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Contact Button on the Right -->
+      <div class="d-flex">
+        <a href="contact.html" class="btn btn-primary ms-auto" style="color: white;">Contact</a>
+      </div>
+    </div>
+  </nav>
+    <div class="container-fluid hero px-4 py-5 mb-5">
+      <div class="container">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+          <!-- First Box -->
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Schedule a Personalised Appointment</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi possimus quaerat reiciendis natus, eveniet quam?</p>
+          </div>
+          <!-- Second Box -->
+          <div class="col-lg-6">
+            <img src="images/img6.jpg" class="img-fluid" alt="">
+          </div>
+        
+          <!-- Third Box -->
+         
+        </div>
+      </div>
+    </div>
+
+<section class="py-5">
+  <div class="container">
+      <div class="row my-5">
+          <!-- Contact Form Column -->
+          <div class="col-lg-6 my-5">
+              <h2 class="mb-4">Contact Us</h2>
+              <form>
+                  <!-- First and Last Name Fields -->
+                  <div class="row">
+                      <div class="col-md-6 mb-3">
+                          <label for="first-name" class="form-label">First Name</label>
+                          <input type="text" class="form-control custom-outline" id="first-name" placeholder="Enter your first name">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                          <label for="last-name" class="form-label">Last Name</label>
+                          <input type="text" class="form-control custom-outline" id="last-name" placeholder="Enter your last name">
+                      </div>
+                  </div>
+
+                  <!-- Email and Phone Number Fields -->
+                  <div class="row">
+                      <div class="col-md-6 mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control custom-outline" id="email" placeholder="Enter your email">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                          <label for="phone" class="form-label">Phone Number</label>
+                          <input type="tel" class="form-control custom-outline" id="phone" placeholder="Enter your phone number">
+                      </div>
+                  </div>
+
+                  <!-- Job Title Field -->
+                  <div class="mb-3">
+                      <label for="job-title" class="form-label">Job Title</label>
+                      <input type="text" class="form-control custom-outline" id="job-title" placeholder="Enter your job title">
+                  </div>
+
+                  <!-- Company Size Dropdown -->
+                  <div class="mb-3">
+                      <label for="company-size" class="form-label">Company Size</label>
+                      <select class="form-select custom-outline" id="company-size">
+                          <option selected disabled>Select company size</option>
+                          <option value="1-10">1-10</option>
+                          <option value="11-50">11-50</option>
+                          <option value="51-200">51-200</option>
+                          <option value="201-500">201-500</option>
+                          <option value="500+">500+</option>
+                      </select>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <button type="submit" class="btn btn-primary w-100">Submit</button>
+              </form>
+          </div>
+
+          <!-- Google Maps Column -->
+          <div class="col-lg-6">
+              <h2 class="mb-4">Our Location</h2>
+              <div class="ratio ratio-4x3">
+                  <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.935871749408!2d-122.08424968531016!3d37.42199997982569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24c7b44bb3d%3A0x7d0b22d55bf2aefa!2sGoogleplex!5e0!3m2!1sen!2sus!4v1639991372475!5m2!1sen!2sus" 
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+  <section class="footer text-dark"> <!-- Optional bg-light for contrast -->
+    <div class="container">
+      <footer class="row row-cols-6 py-5 my-5 border-top">
+        <div class="col">
+          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <p class="text-muted">© 2021</p>
+        </div>
+  
+        <div class="col"></div>
+  
+        <div class="col">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">About</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+  
+</body>
+</html>
