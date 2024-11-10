@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;800&display=swap');
+body {
+
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;    /*
+    background-image: url('assets/Actions\ -\ Hero\ Background.svg');
+    background-size: cover; 
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+p {
+  font-weight: 300;
+}
+
+.border-bottom {
+  color: 1px solid #222325 !important;
+
+}
+.hero {
+
+    background-color: #FAF7F5;
+}
+
+.btn-primary {
+    background-color: #222325;
+    border: 0px;
+
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    background-color: #F9F7F5;
+    height: 300px;
+  }
+  .card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  .card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .image-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, Vertical offset, Blur radius, Color */
+}
+
+
+    section {
+        padding: 60px 60px; /* Top/Bottom: 60px, Left/Right: 20px */
+
+      }
+  
+
+      .timeline {
+        list-style: none;
+      }
+      .timeline > li {
+        margin-bottom: 60px;
+      }
+      
+      /* for Desktop */
+      @media ( min-width : 640px ){
+        .timeline > li {
+          overflow: hidden;
+          margin: 0;
+          position: relative;
+        }
+        .timeline-date {
+          width: 110px;
+          float: left;
+          margin-top: 20px;
+        }
+        .timeline-content {
+          width: 75%;
+          float: left;
+          border-left: 3px #e5e5d1 solid;
+          padding-left: 30px;
+        }
+        .timeline-content:before {
+          content: '';
+          width: 12px;
+          height: 12px;
+          background: #6fc173;
+          position: absolute;
+          left: 106px;
+          top: 24px;
+          border-radius: 100%;
+        }
+      }
+
+
+        /* Custom orange border color */
+  .custom-outline {
+    border-color: #F55B0E; /* Default border color */
+}
+
+.custom-outline:focus {
+    border-color: #F55B0E; /* Focus border color */
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5); /* Optional shadow effect */
+    outline: none; /* Remove default outline */
+}
+
+.navbar a {
+  color: #222325;
+  font-weight: 300;
+}
+
+.navbar a:hover {
+  color:#F55B0E;
+}
+
+
+.navbar {
+  transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for background and shadow */
+}
+
+/* New background color when scrolled */
+.navbar.scrolled {
+  background-color: white !important; /* Change this to your desired scroll color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Blurred shadow effect with a dull color */
+}
+footer {
+  background-color: #08151d;
+  color: aliceblue;
+  
+
+}
+.footer .border-top {
+  border-color: #333 !important; /* Set a dark border color */
+}
+.footer {
+}
+.footer a li{
+  color: aliceblue !important;/* Override any other styles */
+  font-weight: 300;
+}
+
+
+
+.btn-primary:hover {
+  background-color: #F55B0E;
+  border: 0px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #E46E41;
+}
+/* Step icon */
+.step-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #F2DFD8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+/* Step details */
+.step-detail {
+  margin-left: 20px;
+}
+/* Dashed line between steps */
+.timeline-line {
+  height: 50px;
+  border-left: 2px dashed #E46E41;
+  margin: 0 auto;
+}
+
+.cta-button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #F55B0E;  /* Customize your color */
+  fill: #F55B0E;  /* Set the color to your orange */
+
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-right: 5px;  /* Space before the arrow */
+  transition: color 0.3s ease;
+}
+
+.cta-arrow {
+  width: 20px;  /* Increase the size of the arrow */
+  height: 20px;
+  margin-left: 10px;  /* Space between text and arrow */
+  fill: #F55B0E;  /* Set the arrow color to the same orange */
+  transition: transform 0.3s ease;
+
+}
+
+.cta-button:hover {
+  color: #F55B0E;
+}
+
+.cta-button:hover .cta-arrow {
+  transform: translate(5px, -5px);  /* Moves the arrow up-right on hover */
+}
+
+.cta-button::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #F55B0E;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+
+.cta-button:hover::after {
+  width: 100%;
+}
+
+.btn-outline-secondary {
+  border-color: #F55B0E;
+  color: #F55B0E;
+}
+
+
+.btn-outline-secondary:hover {
+  color: white;
+  border-color: #F55B0E;
+  background-color: #F55B0E;
+
+}
